@@ -1,6 +1,6 @@
 # JiebaEx
 
-**TODO: Add description**
+结巴rust分词版本的elixir绑定
 
 ## Installation
 adding `jieba` to your list of dependencies in `mix.exs`:
