@@ -3,19 +3,22 @@
 **TODO: Add description**
 
 ## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `jieba_ex` to your list of dependencies in `mix.exs`:
+adding `jieba` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:jieba_ex, "~> 0.1.0"}
+    {:jieba, "~> 0.1.0"}
   ]
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/jieba_ex](https://hexdocs.pm/jieba_ex).
+- 需要安装rust
 
+## 例子
+
+ ```elixir
+ Jieba.cut("你好吗")
+ ```
+
+注意：不需要做初始化，已经在rust层面已经处理
