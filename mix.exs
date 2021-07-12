@@ -9,7 +9,9 @@ defmodule JiebaEx.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       source_url: "https://github.com/mjason/jieba_ex",
-      name: "jieba_ex"
+      name: "jieba_ex",
+      description: "结巴分词rust版本的elixir版本绑定",
+      package: package()
     ]
   end
 
@@ -26,6 +28,13 @@ defmodule JiebaEx.MixProject do
       {:rustler, "~> 0.22.0"}
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
+    ]
+  end
+
+  defp package() do
+    [
+      licenses: ["Apache-2.0"],
+      links: %{"GitHub" => "https://github.com/mjason/jieba_ex"}
     ]
   end
 end
