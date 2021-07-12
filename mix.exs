@@ -7,7 +7,9 @@ defmodule JiebaEx.MixProject do
       version: "0.1.0",
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      source_url: "https://github.com/mjason/jieba_ex",
+      name: "jieba_ex"
     ]
   end
 
