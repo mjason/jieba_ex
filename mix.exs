@@ -5,7 +5,7 @@ defmodule JiebaEx.MixProject do
     [
       app: :jieba,
       version: "0.1.0",
-      elixir: "~> 1.12",
+      elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       source_url: "https://github.com/mjason/jieba_ex",
@@ -34,6 +34,7 @@ defmodule JiebaEx.MixProject do
   defp package() do
     [
       licenses: ["Apache-2.0"],
+      files: ~w(lib priv .formatter.exs mix.exs README* readme* LICENSE* license* CHANGELOG* changelog* src native),
       links: %{"GitHub" => "https://github.com/mjason/jieba_ex"}
     ]
   end
