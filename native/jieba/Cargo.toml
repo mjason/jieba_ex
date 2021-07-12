@@ -1,0 +1,15 @@
+[package]
+name = "jieba"
+version = "0.1.0"
+authors = []
+edition = "2018"
+
+[lib]
+name = "jieba"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+rustler = "0.22.0"
+jieba-rs = { version = "0.6", features = ["tfidf", "textrank"] }
+lazy_static = "1.4.0"
