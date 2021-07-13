@@ -34,7 +34,6 @@ defmodule JiebaEx.MixProject do
   defp package() do
     [
       licenses: ["Apache-2.0"],
-      files: ~w(lib priv .formatter.exs mix.exs README* readme* LICENSE* license* CHANGELOG* changelog* src native),
       links: %{"GitHub" => "https://github.com/mjason/jieba_ex"}
     ]
   end
