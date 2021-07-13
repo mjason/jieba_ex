@@ -4,14 +4,14 @@ defmodule JiebaEx.MixProject do
   def project do
     [
       app: :jieba,
-      version: "0.1.1",
+      version: "0.1.3",
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       source_url: "https://github.com/mjason/jieba_ex",
       name: "jieba_ex",
       description: "结巴分词rust版本的elixir版本绑定",
-      package: package()
+      package: package(),
     ]
   end
 
@@ -33,6 +33,7 @@ defmodule JiebaEx.MixProject do
 
   defp package() do
     [
+      files: ["native", "lib", "mix.exs"],
       licenses: ["Apache-2.0"],
       links: %{"GitHub" => "https://github.com/mjason/jieba_ex"}
     ]
