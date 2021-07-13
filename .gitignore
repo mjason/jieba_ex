@@ -25,4 +25,4 @@ jieba_ex-*.tar
 # Temporary files, for example, from tests.
 /tmp/
 
-/priv
+/priv/
