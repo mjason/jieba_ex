@@ -33,9 +33,17 @@ defmodule JiebaEx.MixProject do
 
   defp package() do
     [
-      files: ["native", "lib", "mix.exs"],
+      files: ["lib", "mix.exs"] ++ native_files(),
       licenses: ["Apache-2.0"],
       links: %{"GitHub" => "https://github.com/mjason/jieba_ex"}
+    ]
+  end
+
+  defp native_files() do
+    [
+      "native/jieba/src",
+      "native/jieba/.cargo",
+      "native/jieba/Cargo.*"
     ]
   end
 end
